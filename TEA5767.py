@@ -4,7 +4,7 @@ https://github.com/alankrantas/micropython-TEA5767
 TEA5767 Datasheet:
 https://www.sparkfun.com/datasheets/Wireless/General/TEA5767.pdf
 MIT License
-Copyright (c) 2021 Alan Wang
+Copyright (c) 2022 Alan Wang
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
