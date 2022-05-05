@@ -25,7 +25,7 @@ To import and initialize the module:
 import busio, board
 from TEA5767 import Radio
     
-i2c = busio.I2C(scl=board.GP21, sda=board.GP20, frequency=400000)
+i2c = busio.I2C(scl=board.SCL, sda=board.SDA, frequency=400000)
 radio = Radio(i2c, freq=99.7)
 
 print(f'Frequency: FM {radio.frequency}')
