@@ -129,6 +129,7 @@ if __name__ == '__main__':
     
     i2c = busio.I2C(scl=board.GP21, sda=board.GP20, frequency=400000)
     radio = Radio(i2c, freq=99.7)
+    
     print(f'Frequency: FM {radio.frequency}')
     print(f'Ready: {radio.is_ready}')
     print(f'Stereo: {radio.is_stereo}')
