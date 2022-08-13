@@ -4,7 +4,7 @@
 
 [TEA5767](https://www.sparkfun.com/datasheets/Wireless/General/TEA5767.pdf) is a cheap but functional FM radio module, which allow you to build DIY FM radios. It comes with an antenna via a 3.5mm jack but have no internal volume control. 
 
-This driver has been tested on Adafruit ItsyBitsy M0, Adafruit Metro M4 and RPi Pico running CircuitPython 7.2.5 and is derived from my [MicroPython](https://github.com/alankrantas/micropython-TEA5767) version.
+This driver has been tested on Adafruit ItsyBitsy M0, Adafruit Metro M4 and RPi Pico running CircuitPython 7.2.5 and is derived from my [MicroPython](https://github.com/alankrantas/micropython-TEA5767) version. Copy either ```TEA5767.py``` or ```TEA5767.mpy``` (recommended) into the ```lib``` dir in your device.
 
 ## Wiring
 
