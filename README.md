@@ -147,7 +147,7 @@ i2c = busio.I2C(scl=board.GP21, sda=board.GP20, frequency=400000)
 
 def radio_frequency(freq):
     freqB = 4 * (freq * 1000000 + 225000) / 32768
-    while not self._i2c.try_lock():
+    while not i2c.try_lock():
         pass
     i2c.writeto(0x60, bytearray([int(freqB) >> 8, int(freqB) & 0XFF, 0X90, 0X1E, 0X00]))
     i2c.unlock()
