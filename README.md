@@ -34,6 +34,8 @@ print(f'Stereo: {radio.is_stereo}')
 print(f'DC level: {radio.signal_adc_level}')
 ```
 
+> Change the pins since some boards may not have ```SCL``` and ```SDA```-named pins.
+
 ## Parameters
 
 There are a list of parameters that you can set for the radio:
@@ -143,7 +145,7 @@ If you just want to tune the frequency of TEA5767, you can use code as short as 
 ```python
 import busio, board
 
-i2c = busio.I2C(scl=board.GP21, sda=board.GP20, frequency=400000)
+i2c = busio.I2C(scl=board.SCL, sda=board.SDA, frequency=400000)
 
 def radio_frequency(freq):
     freqB = 4 * (freq * 1000000 + 225000) / 32768
