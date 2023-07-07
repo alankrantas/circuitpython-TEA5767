@@ -29,7 +29,7 @@ class Radio:
    TEA5767 FM radio driver class.
     
     Initialize:
-        radio = TEA5767.Radio(i2c, [addr=0x60, freq=99.7, band='US', stereo=True,
+        radio = TEA5767.Radio(i2c, [addr=0x60, freq=106.7, band='US', stereo=True,
                                     soft_mute=True, noise_cancel=True, high_cut=True])
     """
     
@@ -40,7 +40,7 @@ class Radio:
     
     __slot__ = ['_i2c', '_address', 'frequency', 'band_limits', 'standby_mode', 'mute_mode', 'soft_mute_mode',
                 'search_mode', 'search_direction', 'search_adc_level', 'stereo_mode', 'stereo_noise_cancelling_mode',
-                'high_cut_mode', 'is_ready', 'is_stereo', 'is_stereo', 'signal_adc_level']
+                'high_cut_mode', 'is_ready', 'is_stereo', 'signal_adc_level']
     
     def __init__(self, i2c, addr=0x60, freq=0.0, band='US', stereo=True,
                             soft_mute=True, noise_cancel=True, high_cut=True):
@@ -128,7 +128,7 @@ if __name__ == '__main__':
     import busio, board
     
     i2c = busio.I2C(scl=board.SCL, sda=board.SDA, frequency=400000)
-    radio = Radio(i2c, freq=99.7)
+    radio = Radio(i2c, freq=106.7)
     
     print(f'Frequency: FM {radio.frequency}')
     print(f'Ready: {radio.is_ready}')
